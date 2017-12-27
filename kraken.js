@@ -8,9 +8,11 @@ const methods = {
 	private : [ 'Balance', 'TradeBalance', 'OpenOrders', 'ClosedOrders', 'QueryOrders', 'TradesHistory', 'QueryTrades', 'OpenPositions', 'Ledgers', 'QueryLedgers', 'TradeVolume', 'AddOrder', 'CancelOrder', 'DepositMethods', 'DepositAddresses', 'DepositStatus', 'WithdrawInfo', 'Withdraw', 'WithdrawStatus', 'WithdrawCancel' ],
 };
 
+const proxyURL = 'https://cors-anywhere.herokuapp.com';
+
 // Default options
 const defaults = {
-	url     : 'https://api.kraken.com',
+	url     : proxyURL + '/' + 'https://api.kraken.com',
 	version : 0,
 	timeout : 5000,
 };
