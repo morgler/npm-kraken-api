@@ -14,7 +14,7 @@ const proxyURL = 'https://cors-anywhere.herokuapp.com';
 const defaults = {
 	url     : proxyURL + '/' + 'https://api.kraken.com',
 	version : 0,
-	timeout : 5000,
+	timeout : 30000,
 };
 
 // Create a signature for a request
