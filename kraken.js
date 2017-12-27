@@ -31,7 +31,6 @@ const getMessageSignature = (path, request, secret, nonce) => {
 const rawRequest = async (url, headers, data, timeout) => {
 	// Set custom User-Agent string
 	headers['User-Agent'] = 'Kraken Javascript API Client';
-	headers['Access-Control-Allow-Origin'] = '*';
 
 	const options = { headers, timeout };
 
